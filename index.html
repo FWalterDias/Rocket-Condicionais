@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios de condicionais</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    const operador = prompt("Digite o operador que deseja fazer a conta");
+    const num1 = parseFloat(prompt("Digite o primeiro numero:"));
+    const num2 = parseFloat(prompt("Digite o segundo numero:"));
+    let resultado = null;
+
+    switch (operador) {
+        case "+":
+            resultado = num1 + num2;
+            alert(`A soma de ${num1} + ${num2} é ${resultado}`);
+            break;
+
+        case "-":
+            resultado = num1 - num2;
+            alert(`A subtração de ${num1} - ${num2} é ${resultado}`)
+            break;
+
+        case "*":
+            resultado = num1 * num2;
+            alert(`A multiplicação de ${num1} * ${num2} é ${resultado}`)
+            break;
+
+        case "/":
+            resultado = num1 / num2;
+            alert(`A divisão de ${num1} / ${num2} é ${resultado.toFixed(2)}`)
+            break;
+
+        case "%":
+            resultado = num1 % num2;
+            alert(`O resto da divisão de ${num1} % ${num2} é ${resultado}`)
+            break;
+
+        default:
+            alert(`Operador inválido`)
+            break;
+    }
+</script>
+
+</html>
